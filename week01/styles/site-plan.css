@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima&family=Lato:ital@1&display=swap");
+
+:root {
+  --first-color: #ffffff;
+  --second-color: #1c5d99;
+  --third-color: #639fab;
+  --first-accent: #222222;
+  --second-accent: #fe6d73;
+
+  --heading-font: "Arima", sans-serif, Arial;
+  --paragraph-font: "Lato:ital", Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--first-color);
+  font-family: var(--paragraph-font);
+  margin: auto 18%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#chamber-logo {
+  height: 120px;
+  padding: 10px;
+}
+
+#website-name {
+  padding: 10px;
+  font-family: var(--heading-font);
+  margin-left: 30px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--second-color);
+  height: 60px;
+  border: #222222 solid 1px;
+}
+
+nav a {
+  color: var(--first-color);
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+  width: 100%;
+}
+
+nav a:hover {
+  background-color: var(--first-accent);
+}
+
+main {
+  background-color: var(--third-color);
+  color: var(--first-color);
+  border: #222222 solid 1px;
+}
+
+h2 {
+  font-family: var(--heading-font);
+  margin-left: 32px;
+}
+
+.card {
+  background-color: var(--first-color);
+  color: var(--second-color);
+  margin: 1.5rem;
+  border: var(--second-accent) 1px solid;
+  padding: 1rem;
+}
+
+.card h3 {
+  font-family: var(--heading-font);
+  color: var(--first-accent);
+}
+
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+  border: #222222 solid 1px;
+}
+.colors th {
+  background-color: #999;
+}
+.colors td {
+  width: 20%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--first-color);
+}
+.secondary {
+  background-color: var(--second-color);
+  color: var(--first-color);
+}
+.accent1 {
+  background-color: var(--third-color);
+}
+.accent2 {
+  background-color: var(--first-accent);
+}
+.accent3 {
+  background-color: var(--second-accent);
+}
+
+#heading-example {
+  font-family: var(--heading-font);
+}
+
+.card img {
+  width: 84%;
+  margin: 0 8%;
+}
+
+footer {
+  background-color: var(--second-accent);
+  color: var(--first-color);
+  height: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+}
+
+footer div p {
+  padding: 5px;
+}
