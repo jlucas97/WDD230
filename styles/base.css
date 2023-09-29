@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Arima&family=Lato:ital@1&display=swap");
 
 :root {
-  --first-color: #227c9d;
+  --first-color: #0471a6;
   --second-color: #17c3b2;
-  --third-color: #ffcb77;
-  --first-accent: #fef9ef;
-  --second-accent: #fe6d73;
+  --third-color: #fe6d73;
+  --first-accent: #fff;
+  --second-accent: #000;
 
   --heading-font: "Arima", sans-serif, Arial;
   --paragraph-font: "Lato:ital", Helvetica, sans-serif;
@@ -18,9 +18,8 @@ body {
 }
 
 header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 3fr 3fr 1fr;
   margin-bottom: 20px;
 }
 
@@ -28,12 +27,49 @@ header {
   height: 200px;
   width: 200px;
   padding: 20px;
+  justify-self: end;
+  margin-right: 40px;
 }
 
 #author-name {
-  margin: 40px;
+  margin: 60px;
   font-family: var(--heading-font);
   font-size: 38px;
+  align-self: center;
+}
+
+#light-mode {
+  height: 44px;
+  width: 44px;
+  display: flex;
+  align-self: flex-start;
+  margin: 20px 10px 20px 35%;
+  justify-content: center;
+}
+
+#lightbulb {
+  height: 32px;
+  width: 32px;
+  padding: 2px;
+}
+
+#menu {
+  font-size: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 3px 7px 6px;
+  background-color: #eee;
+  color: #000;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "❌";
 }
 
 nav {
@@ -42,6 +78,7 @@ nav {
   text-align: center;
   background-color: var(--third-color);
   margin: -10px;
+  display: none;
 }
 
 nav a {
@@ -71,6 +108,7 @@ h2 {
 h3 {
   text-align: center;
   background-color: var(--second-color);
+  color: var(--second-accent);
   padding: 20px;
   margin-top: 0;
 }
@@ -80,7 +118,7 @@ h3 {
 }
 
 .card li a {
-  color: var(--second-accent);
+  color: var(--first-accent);
 }
 
 .card p {
@@ -89,10 +127,11 @@ h3 {
 
 footer {
   background-color: var(--third-color);
-  color: var(--first-color);
+  color: var(--second-accent);
   height: auto;
   width: 100%;
-  padding: 20px;
+  height: 70px;
+  padding: 0 20px 20px 20px;
   margin: 15px -10px -10px;
   text-align: center;
 }
@@ -102,6 +141,6 @@ footer div {
   justify-content: center;
 }
 
-footer div p {
-  padding: 5px;
+#last-modified {
+  margin: 0;
 }

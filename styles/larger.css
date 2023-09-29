@@ -9,6 +9,10 @@
     width: 100%;
   }
 
+  #menu {
+    display: none;
+  }
+
   #cards-section {
     display: grid;
     grid-template-columns: 65% 35%;
