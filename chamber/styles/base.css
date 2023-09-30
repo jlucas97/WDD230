@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima&family=Lato:ital@1&display=swap");
+
+:root {
+  --first-color: #ffffff;
+  --second-color: #1c5d99;
+  --third-color: #639fab;
+  --first-accent: #222222;
+  --second-accent: #fe6d73;
+
+  --heading-font: "Arima", sans-serif, Arial;
+  --paragraph-font: "Lato:ital", Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--second-color);
+  font-family: var(--paragraph-font);
+  margin: auto 18%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#logo {
+  height: 80px;
+  width: 80px;
+  align-self: center;
+}
+
+h1 {
+  color: var(--first-color);
+  align-self: center;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--third-color);
+  margin: 0px;
+}
+
+nav a {
+  text-align: center;
+  font-size: 32px;
+  color: var(--first-accent);
+  text-decoration: none;
+  padding: 15px;
+}
+
+nav a:hover {
+  background-color: var(--second-color);
+  color: var(--second-accent);
+}
+
+#hero {
+  width: 100%;
+  height: 240px;
+}
+
+button {
+  background-color: var(--first-color);
+  color: var(--first-accent);
+  margin: 5px 20% 5px 20%;
+  width: 60%;
+}
+
+.card {
+  border: var(--second-accent) solid 1px;
+  color: var(--first-color);
+  border-radius: 3%;
+  padding: 15px;
+  margin: 15px auto;
+}
+
+.card a {
+  color: var(--first-color);
+}
+
+#alajuela {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+#city-info {
+  border: var(--second-accent) solid 1px;
+  border-radius: 3%;
+  color: var(--first-color);
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 2fr;
+}
+
+#city-info h3 {
+  grid-column: 1/4;
+}
+
+#city-info img {
+  width: 85%;
+  align-self: center;
+}
+
+#city-info p {
+  padding: 20px;
+  grid-column: 2/4;
+}
+
+#weather {
+  margin: 0 auto;
+  border: var(--second-accent) 1px solid;
+  border-radius: 3%;
+  padding: 5px;
+}
+
+#city-info h5 {
+  grid-column: 3/4;
+}
+
+footer {
+  background-color: var(--second-accent);
+  color: var(--first-accent);
+  height: auto;
+  width: 100%;
+  height: 70px;
+  padding: 0 20px 20px 20px;
+  margin: 15px -10px -10px;
+  text-align: center;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  padding: 2px;
+}
+
+#last-modified {
+  margin: 0;
+}
