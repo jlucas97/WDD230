@@ -1,0 +1,72 @@
+main {
+  position: relative;
+  overflow: auto;
+}
+
+#button-container {
+  width: 60px;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1; /* You may need to adjust z-index if other elements overlap. */
+}
+
+#refresh img {
+  width: 40px;
+  position: relative;
+}
+
+#refresh {
+  height: 60px;
+  width: 60px;
+  position: sticky;
+  top: 0;
+  right: 1rem;
+}
+
+#pictures {
+  display: flex;
+  background-color: grey;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pictures img {
+  margin: 15px;
+  background-color: black;
+  animation: fade 5s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+footer {
+  background-color: gray;
+  color: #fff;
+  height: auto;
+  width: 100%;
+  height: 70px;
+  padding: 0 20px 20px 20px;
+  margin: 15px -10px -10px;
+  text-align: center;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+}
+
+#last-modified {
+  margin: 0;
+}
+
+footer p {
+  padding: 2px;
+}
