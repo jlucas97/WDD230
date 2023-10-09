@@ -61,7 +61,7 @@ header {
   background-color: #eee;
   color: #000;
   display: flex;
-  position: relative;
+  position: absolute;
   margin: 0 auto;
 }
 
