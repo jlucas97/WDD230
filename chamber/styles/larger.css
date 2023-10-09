@@ -104,4 +104,25 @@
     width: 100%;
     padding: 10px;
   }
+
+  /*Start of the Discovery website */
+
+  #data-view {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "sidebar main";
+  }
+
+  .sidebar-section {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .sidebar-section:nth-of-type(4) {
+    height: 10%;
+  }
 }

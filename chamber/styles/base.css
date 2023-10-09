@@ -17,6 +17,11 @@ body {
   margin: auto 18%;
 }
 
+* p,
+h3 {
+  color: #fff;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -139,4 +144,14 @@ footer p {
 
 #last-modified {
   margin: 0;
+}
+
+/*Start of the Discovery website */
+
+.sidebar-section,
+#discovery-gallery {
+  border: #ffffff 1px solid;
+  border-radius: 4px;
+  padding: 3px;
+  margin: 15px;
 }
