@@ -23,7 +23,7 @@ mode.addEventListener("click", () => {
             card.style.color = "#fff";
         })
 
-        lightImage.src = "images/idea.png";
+        lightImage.src = "images/idea.webp";
         lightbulb = false;
     }
 });

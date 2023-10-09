@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="images/lucas-castillo-logo.ico">
+    <link rel="icon" href="images/lucas-castillo-logo.webp">
     <meta property="og:title" content="WDD 230 - Web Frontend Development I">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://puravida.com/wp-content/uploads/2011/05/La-Fortuna-Costa-Rica.jpg">
@@ -19,9 +19,9 @@
 
 <body>
     <header>
-        <img id="profile-pic" src="images/circled-profile-pic.png" alt="Lucas Castillo profile's picture">
+        <img id="profile-pic" src="images/circled-profile-pic.webp" alt="Lucas Castillo profile's picture">
         <h1 id="author-name">Lucas Castillo</h1>
-        <button id="light-mode"><img src="images/idea.png" alt="bright mode icon" id="lightbulb"></button>
+        <button id="light-mode"><img src="images/idea.webp" alt="bright mode icon" id="lightbulb"></button>
     </header>
     <button id="menu"></button>
     <nav>
@@ -33,6 +33,14 @@
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
         <hr>
+        <div id="hero">
+            <picture>
+                <source srcset="week03/images/hero-small.webp" media="(max-width: 400px)">
+                <source srcset="week03/images/hero-medium.webp" media="(max-width: 960px)">
+                <img src="week03/images/hero-large.webp" alt="Rio de Janeiro's temple"
+                    style="max-width: 100%; height: auto;">
+            </picture>
+        </div>
         <div id="cards-section">
             <section class="card">
                 <h3>Learning Activities</h3>
@@ -63,9 +71,17 @@
             <section class="card">
                 <h3>Information</h3>
                 <p>Alajuela, Costa Rica</p>
+                <p id="visits">Website visits: </p>
             </section>
         </div>
+        <div id="alajuela-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1179.7536445982562!2d-84.22721421055577!3d9.96982144323674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f91dfa64b1d5%3A0xb2e15afacb5690aa!2sIglesia%20de%20Jesucristo%20de%20los%20Santos%20de%20los%20%C3%9Altimos%20D%C3%ADas!5e0!3m2!1sen!2scr!4v1696380794326!5m2!1sen!2scr"
+                width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
+
     <footer>
         <div>
             <p id="year">&copy;</p>
@@ -76,6 +92,7 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburgerMenu.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/visits.js"></script>
 </body>
 
 </html>
