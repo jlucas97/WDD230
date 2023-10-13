@@ -125,6 +125,7 @@ h3 {
 
 .card li a {
   color: var(--first-accent);
+  text-decoration: underline var(--third-color);
 }
 
 .card p {

@@ -1,0 +1,27 @@
+table {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+th {
+  border: 1px solid darkgrey;
+}
+
+#title {
+  background-color: #000;
+  color: aliceblue;
+  border: 1px solid #000;
+}
+
+#empty-header {
+  background-color: #000;
+  border: 1px solid #000;
+}
+
+.service {
+  background-color: grey;
+}
+
+.feature2 {
+  background-color: beige;
+}
