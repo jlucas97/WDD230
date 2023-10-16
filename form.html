@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate WDD 230 - Web Frontend Development I</title>
+    <meta name="description" content="Form to rate website">
+    <meta name="author" content="Lucas Castillo">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="images/lucas-castillo-logo.webp">
+
+</head>
+
+<body>
+    <header>
+        <h1>Website Feedback</h1>
+        <button id="light-mode"><img src="images/idea.webp" alt="bright mode icon" id="lightbulb"></button>
+
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="chamber/index.html">Chamber</a>
+        <a href="week01/chamber-site-plan.html">Site Plan</a>
+        <a href="">Form</a>
+    </nav>
+    <main>
+        <form method="get" action="record.html">
+            <fieldset>
+                <legend>User Registration</legend>
+                <label class="user">Username* <input type="text" name="uname" required id="userName"></label>
+                <label class="user">Password* <input type="password" name="pword" required id="passWord"
+                        pattern="^[a-zA-Z0-9]{8,}$"></label>
+                <label class="user">Confirm Password*
+                    <input type="password" name="rpword" required id="rPassWord" pattern="^[a-zA-Z0-9]{8,}$"></label>
+                <label class="user">Email address<input type="email" id="uEmail" name="email" required
+                        pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
+                <label class="user">Rating <input type="range" name="urating" id="uRating" list="rangevalues" min="1"
+                        max="10" value="1" step="1">
+                    <datalist id="rangevalues">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+
+                </label>
+                <div id="rangevalue">1</div>
+
+                <input type="submit" value="Rate this site" id="submitBtn">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <p id="year">&copy;</p>
+            <p> Lucas Castillo Costa Rica &#127464; &#127479;</p>
+        </div>
+        <p id="last-modified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/formScript.js"></script>
+</body>
+
+</html>

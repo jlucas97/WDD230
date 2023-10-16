@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima&family=Lato:ital@1&display=swap");
+
+:root {
+  --first-color: #0471a6;
+  --second-color: #17c3b2;
+  --third-color: #fe6d73;
+  --first-accent: #fff;
+  --second-accent: #000;
+
+  --heading-font: "Arima", sans-serif, Arial;
+  --paragraph-font: "Lato:ital", Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--first-color);
+  color: var(--first-accent);
+  font-family: var(--paragraph-font);
+  margin: 0 5px;
+}
+
+header {
+  display: flex;
+  grid-template-columns: 3fr 3fr 1fr;
+  margin-bottom: 20px;
+  justify-content: space-around;
+}
+
+#light-mode {
+  height: 44px;
+  width: 44px;
+  display: flex;
+  margin: 20px 10px 20px 20px;
+  justify-content: center;
+}
+
+#lightbulb {
+  height: 32px;
+  width: 32px;
+  padding: 2px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  background-color: var(--third-color);
+  margin: 10px 0;
+}
+
+nav a {
+  text-align: center;
+  font-size: 32px;
+  color: var(--second-accent);
+  text-decoration: none;
+  padding: 15px;
+}
+
+nav a:hover {
+  background-color: var(--second-color);
+  color: var(--first-accent);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.user {
+  display: block;
+  margin: 12px;
+}
+
+.user input {
+  margin: 6px;
+}
+
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid var(--first-accent);
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+}
+
+form div {
+  margin: 12px;
+}
+
+#submitBtn:hover {
+  background-color: var(--second-color);
+  color: var(--first-accent);
+}
+
+footer {
+  background-color: var(--third-color);
+  color: var(--second-accent);
+  height: auto;
+  width: 100%;
+  height: 70px;
+  padding-bottom: 20px;
+  margin: 15px 0 -15px 0;
+  text-align: center;
+}
+
+footer p {
+  padding: 2px;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+}
+
+#last-modified {
+  margin: 0;
+}
