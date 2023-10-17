@@ -179,3 +179,36 @@ footer p {
 #discovery-gallery img:hover {
   box-shadow: 0 0 50px #fff;
 }
+
+/*Form styles*/
+.main-form {
+  margin-top: 16px;
+  border: var(--first-color) 1px solid;
+  border-radius: 8px;
+  color: var(--first-color);
+}
+
+.main-form fieldset {
+  margin: 16px 4px;
+}
+
+form {
+  display: block;
+}
+
+form label {
+  display: block;
+  padding: 6px;
+}
+
+#submitBtn {
+  margin: auto 35%;
+}
+
+.info {
+  padding: 8px;
+}
+.info h2 {
+  margin-left: 15%;
+  margin-top: 1.5rem;
+}

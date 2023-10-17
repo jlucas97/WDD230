@@ -126,4 +126,10 @@
   .sidebar-section:nth-of-type(4) {
     height: 10%;
   }
+
+  /* Form */
+  .main-form {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+  }
 }

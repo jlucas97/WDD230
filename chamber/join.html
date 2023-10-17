@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce of Alajuela City">
+    <meta name="author" content="Lucas Castillo">
+    <title>Alajuela's Chamber of Commerce</title>
+    <link rel="icon" href="images/chamber.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta property="og:title" content="Alajuela Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://puravida.com/wp-content/uploads/2011/05/La-Fortuna-Costa-Rica.jpg">
+    <meta property="og:url" content="https://jlucas97.github.io/wdd230/chamber/index.html">
+</head>
+
+<body>
+    <header>
+        <img src="images/team.png" alt="chamber's logo" id="logo">
+        <h1>Alajuela Chamber of Commerce</h1>
+    </header>
+    <button id="menu"></button>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="discover.html">Chamber</a>
+        <a href="../week01/chamber-site-plan.html">Site Plan</a>
+        <a href="join.html">Form</a>
+    </nav>
+    <main class="main-form">
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Chamber of Commerce Application</legend>
+                <label class="user">First name* <input type="text" name="fname" required id="fName"></label>
+                <label class="user">Last name* <input type="text" name="lname" required id="lName"></label>
+
+                <label class="user">Email address*<input type="email" id="uEmail" name="email" required
+                        pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"
+                        placeholder="email@domain.com">
+                </label>
+                <label class="user">Phone Number* <input type="tel" required name="utel" id="uTel"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Company Information</legend>
+                <label class="company">Title
+                    <input type="text" name="utitle" id="uTitle" pattern="^[a-zA-Z\s\-]{7,}$"></label>
+                <label class="company">Organization Name* <input type="text" required name="uorg" id="uOrg"></label>
+                <label class="company">Organization Description* <textarea name="odescription"
+                        id="oDescription"></textarea></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership</legend>
+                <div id="membership">
+
+                    <label><input type="radio" name="membership" value="np">NP</label>
+                    <label><input type="radio" name="membership" value="bronze">Bronze</label>
+                    <label><input type="radio" name="membership" value="silver">Silver</label>
+                    <label><input type="radio" name="membership" value="gold">Gold</label>
+                </div>
+                <label class="membership"><input type="hidden" id="timeStamp" name="tstamp"></label>
+
+            </fieldset>
+            <input type="submit" value="Join Chamber!" id="submitBtn">
+        </form>
+        <div class="info">
+            <h2>Membership info</h2>
+            <ul>
+                <li>
+                    <h3>Non Profitable </h3>
+                    <p>This membership is for free for non profitable organizations and
+                        it gives access to helpful information and a newsletter to keep you updated</p>
+                </li>
+                <li>
+                    <h3>Bronze</h3>
+                    <p>This one has a cost of 4$ monthly and you will have right to vote an 1 add once a month</p>
+                </li>
+                <li>
+                    <h3>Silver</h3>
+                    <p>For 9$ this option gives you previous benefits, plus a better advertisement space, a spot on live
+                        events and up to 5 ads monthly</p>
+                </li>
+                <li>
+                    <h3>Gold</h3>
+                    <p>This has all previous benefits, the best spots on ads and events. Up to 10 ads, become part of
+                        the organizing chamber's council</p>
+                </li>
+            </ul>
+
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p id="year">&copy;</p>
+            <p>Lucas Castillo Costa Rica &#127464; &#127479;</p>
+        </div>
+        <p id="last-modified"></p>
+    </footer>
+    <script src="../scripts/getDates.js"></script>
+    <script src="../scripts/hamburgerMenu.js"></script>
+</body>
+
+</html>

@@ -17,3 +17,7 @@ window.addEventListener("load", () => {
     localStorage.setItem("lastVisit", lastVisitRecorded);
 });
 
+
+const hidden = document.getElementById("timeStamp");
+hidden.value = localStorage.getItem("lastVisit");
+
