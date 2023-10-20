@@ -1,0 +1,101 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "Layout"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "Media Query"
+                },
+                {
+                    "url": "https://codepen.io/Lucas-Castillo-Vasquez/pen/vYveNjG",
+                    "title": "JS Pen"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "week02/design.html",
+                    "title": "Design Principles"
+                },
+                {
+                    "url": "https://codepen.io/Lucas-Castillo-Vasquez/pen/xxmjMyK",
+                    "title": "Hamburger Menu"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "Book of Mormon"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "Webp Image"
+                },
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "Lazy Load"
+                },
+                {
+                    "url": "week03/responsive-images.html",
+                    "title": "Book Of Mormon Improved"
+                },
+                {
+                    "url": "week03/responsive-images.html",
+                    "title": "Book Of Mormon Improved"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "https://codepen.io/Lucas-Castillo-Vasquez/pen/MWZxWbK",
+                    "title": "Pseudo-Classes"
+                },
+                {
+                    "url": "week04/css-combinator.html",
+                    "title": "CSS Combinators"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "Tables"
+                },
+                {
+                    "url": "week04/form/form-start/index.html",
+                    "title": "Form"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "https://codepen.io/Lucas-Castillo-Vasquez/pen/JjxPEMQ",
+                    "title": "Pseudo-Elements"
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "JSON Example"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "Prophets"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "Weather"
+                }
+            ]
+        }
+    ]
+}
