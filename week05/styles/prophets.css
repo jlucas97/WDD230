@@ -1,0 +1,26 @@
+body {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+header {
+  background-color: bisque;
+  box-shadow: 10px 10px 10px grey;
+  color: darkcyan;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  background-color: #aa7fb6;
+  color: #480ec9;
+  text-align: center;
+  padding: 0 8px 6px;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    margin: auto 30%;
+  }
+}

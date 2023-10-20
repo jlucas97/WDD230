@@ -1,0 +1,23 @@
+{
+    "familyName": "Mustaine",
+    "movedToWard": "10/10/2023",
+    "familyMembersQuantity": 3,
+    "visitedByBishop": "yes",
+    "members": [
+        {
+            "name": "Dave",
+            "gender": "M",
+            "birthDate": "1/7/1984"
+        },
+        {
+            "name": "Karol",
+            "gender": "F",
+            "birthDate": "8/3/1989"
+        },
+        {
+            "name": "Richard",
+            "gender": "M",
+            "birthDate": "12/5/2015"
+        }
+    ]
+}
