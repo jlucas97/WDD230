@@ -29,6 +29,13 @@ const displayCompanies = (data) => {
         location.innerHTML = `Location: ${company.address}`;
         section.appendChild(location);
 
+        const businessImg = document.createElement("img");
+        businessImg.setAttribute("src", company.image);
+        businessImg.setAttribute("width", "200");
+        businessImg.setAttribute("alt", `${company.name} picture`);
+        section.appendChild(businessImg);
+
+
 
         container.appendChild(section);
     });
