@@ -1,10 +1,13 @@
 
-const baseURL = "https://https://jlucas97.github.io/wdd230/";
-const linksURL = "https://https://jlucas97.github.io/wdd230/data/links.json";
+const baseURL = "https://jlucas97.github.io/wdd230/";
+const linksURL = "https://jlucas97.github.io/wdd230/data/links.json";
+const ulLinks = document.getElementById("links");
 
-async function fetchLinks() {
+
+
+async function getLinks() {
     try {
-        const response = await fetch(url);
+        const response = await fetch(linksURL);
         if (response.ok) {
             const data = await response.json();
             console.log(data);
@@ -17,5 +20,27 @@ async function fetchLinks() {
     }
 }
 
+const displayLinks = (data) => {
+    const weeks = data.weeks;
+    weeks.forEach((week) => {
+        const liLinks = document.createElement("li");
+        liLinks.innerHTML = week.week + ": ";
+        ulLinks.appendChild(liLinks);
+        var i = 0;
+        week.links.forEach((url) => {
+            const homeworks = document.createElement("a");
+            if (i === week.links.length - 1) {
+                homeworks.innerHTML = `${url.title} `;
+            } else {
+                homeworks.innerHTML = `${url.title} |`;
+            }
+            i++;
+            homeworks.setAttribute("href", url.url);
+            homeworks.setAttribute("target", "_blank");
 
+            liLinks.appendChild(homeworks);
+        });
+    });
+}
 
+getLinks();
