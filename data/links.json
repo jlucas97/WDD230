@@ -98,10 +98,12 @@
             ]
         },
         {
-            "week": "Week 6"
+            "week": "Week 6",
+            "links": []
         },
         {
-            "week": "Week 7"
+            "week": "Week 7",
+            "links": []
         }
     ]
 }
