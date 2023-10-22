@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "name": "Cafetería Alajuela",
+            "address": "Calle Central, Alajuela, Costa Rica",
+            "phone": "+506 2222-1234",
+            "website": "http://www.cafeterialajuela.cr",
+            "image": "cafe-alajuela.jpg",
+            "membership_level": "Gold",
+            "other_information": "Local café serving the best Costa Rican coffee."
+        },
+        {
+            "name": "Pura Vida Adventure Tours",
+            "address": "Avenida Principal, Alajuela, Costa Rica",
+            "phone": "+506 2222-5678",
+            "website": "http://www.puravidaadventures.cr",
+            "image": "puravida-tours.jpg",
+            "membership_level": "Silver",
+            "other_information": "Guided adventure tours to explore the beauty of Costa Rica."
+        },
+        {
+            "name": "Sabor Tico Restaurant",
+            "address": "Paseo de la Cultura, Alajuela, Costa Rica",
+            "phone": "+506 2222-8899",
+            "website": "http://www.sabortico.cr",
+            "image": "sabor-tico.jpg",
+            "membership_level": "Bronze",
+            "other_information": "Authentic Costa Rican cuisine with a local twist."
+        },
+        {
+            "name": "EcoGreen Tech Solutions",
+            "address": "Avenida Ecológica, Alajuela, Costa Rica",
+            "phone": "+506 2222-1010",
+            "website": "http://www.ecogreentech.cr",
+            "image": "ecogreen-tech.jpg",
+            "membership_level": "Silver",
+            "other_information": "Eco-friendly tech solutions for a sustainable future."
+        },
+        {
+            "name": "Alajuela Farmers' Market",
+            "address": "Feria de Agricultores, Alajuela, Costa Rica",
+            "phone": "+506 2222-3456",
+            "website": "http://www.feriaalajuela.cr",
+            "image": "alajuela-market.jpg",
+            "membership_level": "NP",
+            "other_information": "Local produce and artisanal goods at the heart of Alajuela."
+        },
+        {
+            "name": "Arte Costa Gallery",
+            "address": "Avenida del Arte, Alajuela, Costa Rica",
+            "phone": "+506 2222-7878",
+            "website": "http://www.artecosta.cr",
+            "image": "arte-costa.jpg",
+            "membership_level": "Gold",
+            "other_information": "Showcasing local art and cultural exhibitions."
+        },
+        {
+            "name": "ReciTech Recycling",
+            "address": "Calle Sostenible, Alajuela, Costa Rica",
+            "phone": "+506 2222-5555",
+            "website": "http://www.recitechcr.cr",
+            "image": "recitech-recycling.jpg",
+            "membership_level": "Bronze",
+            "other_information": "Responsible electronic recycling services for a cleaner environment."
+        }
+    ]
+}
