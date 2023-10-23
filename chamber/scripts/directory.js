@@ -35,13 +35,38 @@ const displayCompanies = (data) => {
         businessImg.setAttribute("alt", `${company.name} picture`);
         section.appendChild(businessImg);
 
+        const phone = document.createElement("p");
+        phone.innerHTML = company.phone;
+        section.appendChild(phone);
 
+        const companyLink = document.createElement("a");
+        companyLink.setAttribute("href", company.website);
+        companyLink.innerHTML = "Visit our webpage";
+        section.appendChild(companyLink);
+
+        const description = document.createElement("p");
+        description.innerHTML = `Description: ${company.other_information}`;
+        section.appendChild(description);
 
         container.appendChild(section);
     });
 
 
 }
+
+
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
+
+listButton.addEventListener("click", () => {
+    container.classList.add("list");
+    container.classList.remove("companies");
+});
+
+gridButton.addEventListener("click", () => {
+    container.classList.add("companies");
+    container.classList.remove("list");
+})
 
 
 getCompanies();

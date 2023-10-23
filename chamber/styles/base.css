@@ -215,5 +215,43 @@ form label {
 
 /*Section for directory*/
 
-section {
+.companies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 15px;
+  align-items: center;
+}
+
+.companies section {
+  color: var(--first-color);
+  border: var(--second-accent) 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.companies a {
+  color: var(--second-accent);
+}
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list section {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.25rem;
+  border: var(--second-accent) 1px solid;
+  background-color: var(--third-color);
+}
+
+.list section a {
+  align-self: center;
+  color: var(--first-color);
+}
+
+.list section img,
+.list section h3,
+.list section p {
+  display: none;
 }
