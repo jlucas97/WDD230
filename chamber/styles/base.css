@@ -81,9 +81,8 @@ nav a:hover {
   color: var(--second-accent);
 }
 
-#hero {
-  width: 100%;
-  height: 240px;
+.hero {
+  margin-top: 8px;
 }
 
 button {
@@ -156,6 +155,14 @@ footer {
 footer div {
   display: grid;
   grid-template-columns: 40% 60%;
+}
+
+footer a {
+  color: var(--first-accent);
+}
+
+footer a:hover {
+  color: var(--first-color);
 }
 
 #year::before {
